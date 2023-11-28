@@ -7,7 +7,7 @@
     "orientation": "portrait",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
-    "start_url": "./index.html?utm_source=web_app_manifest",
+    "start_url": "https://urieltexmaye.github.io/PWA/",
     "scope": "./",
     "lang": "es-ES",
     "icons": [
