@@ -1,0 +1,275 @@
+/*Estilos generables*/
+*{
+    margin: 0px; /*Se establece el margen*/
+    padding: 0px; /*Espacio entre el borde y el contenido*/
+    text-decoration: none; /*Decoración del texto (subrayado, línea superior, tachado, ninguno)*/
+    font-family: 'Open Sans', Verdana; /*Fuente para el texto*/
+}
+
+body {
+    background: white; /*Color del fondo*/
+}
+
+.clearfix{ /*Asignación de elementos flotantes en los lados*/
+    clear: both; /*Se coloca un elemento debajo de los elementos flotantes en ambos lados*/
+    float: none; /*Ajuste del texto con valor inicial*/
+}
+
+.container{ /*Contenedor para los elementos*/
+    width: 85%; /*Valor de anchura para el contenedor*/
+    margin: 0px auto; /*Margen del contenedor*/
+}
+
+/*Cabecera*/
+#main-header{
+    background: white; /*Color de fondo del encabezado*/
+    height: 100px; /*Valor de altura del encabezado*/
+    line-height: 85px; /*Control de espacio entre líneas base de texto*/
+    /*border-bottom: 1px solid black*/
+}
+
+#logo{ /*Asignación de propiedades para el logo*/
+    width: 63%; /*Anchura del 63%*/
+    float: left; /*El elemento flota a la izquierda del contenedor*/
+}
+
+#logo h1{ /*Propiedades de fuente*/
+    font-weight: bold; /*Peso de la fuente (bolder y lighter, 100, 200, 300, 400...)*/
+    font-size: 25px; /*Tamaño de la fuente del texto*/
+    color: #FB314E; /*Color de la fuente del texto*/
+}
+
+#menu{ /*Propiedades del menú*/
+    width: 380px; /*Anchura del menú*/
+    float: left; /*El elemento flota a la izquierda del contenedor*/
+}
+
+#menu ul li{ /*Propedades para las listas mostradas*/
+    list-style: none; /*Sin asignación de estilo para la lista*/
+    float: left; /*El elemento flota a la izquierda del contenedor*/
+    margin-left: 15px; /*Margen a la izquierda*/
+    margin-right: 15px; /*Margen a la derecha*/
+}
+
+#menu ul li a{
+    color: black; /*Color del texto para los enlaces*/
+}
+
+#menu ul li a:hover{
+    color: #FB314E; /*Cambio de color del texto al pasar el cursor por el elemento*/
+}
+
+/*Slider deslizamiento de elementos verticalmente*/
+#slider{
+    height: 300px; /*Altura del elemento slider*/
+    background: #FB314E; /*Color del slider*/
+}
+
+#slider h2{ /*Encabezado del texto del slider*/
+    font-size: 40px; /*Tamaño del texto*/
+    text-align: center; /*Alineación del texto centrado*/
+    color: white; /*Color del texto*/
+    line-height: 290px; /*Espacio entre líneas del texto*/
+    text-shadow: 0px 0px 6px black; /*Asignación de sombra alrededor del texto*/
+}
+
+/*Maquetado de servicios*/
+.subheader {
+    font-size: 34px; /*Tamaño de la fuente del texto*/
+    color: #333; /*Color del texto*/
+    text-align: center; /*Alineación del texto centrado*/
+    margin-top: 40px; /*Tamaño del margen superior*/
+    margin-bottom: 30px; /*Tamaño del margen inferior*/
+    padding-bottom: 15px; /*Relleno inferior, espacio entre el borde inferior y el contenido*/
+    border-bottom: 1px solid rgba(251, 49, 78, 0.3); /*Se establece el ancho, estilo y el color del borde inferior*/
+}
+
+.service, .video{ /*Propiedades para el apartado de servicios y videos*/
+    width: 33%; /*Anchura*/
+    text-align: center; /*Alineación del texto centrado*/
+    float: left; /*El elemento flota a la izquierda del contenedor*/
+    margin-top: 20px; /*Tamaño del margen superior*/
+    margin-bottom: 20px; /*Tamaño del margen inferior*/
+}
+
+.service img{ /*Propiedades para las imagenes en el apartado de servicios*/
+    height: 48px; /*Altura de las imagenes*/
+    margin-bottom: 20px; /*Tamaño del margen inferior*/
+    align-items: right;
+}
+
+.service h3{ /*Tamaño del texto*/
+    margin-bottom: 10px; /*Tamaño del margen inferior*/
+    text-align: center; /*Alineación del texto centrado*/
+}
+
+.service p, .video p{ /*Propiedades para el texto en el apartado de servicios y videos*/
+    color: #444; /*Color del texto*/
+    text-align: justify; /*Alineación del texto justificado*/
+    display: block; /*Visualización del texto (block, salto de línea antes y despues de cada elemento)*/
+    width: 85%; /*Anchura para la distribución del texto*/
+    margin: 0px auto; /*Margen automático*/
+}
+
+/*Sección de videos*/
+.video iframe{
+    width: 80%; /*Anchura del vídeo*/
+    height: 170px; /*Altura del vídeo*/
+}
+
+/*Footer*/
+#footer{ 
+    background: #333; /*Color de fondo del pie de página*/
+    padding-top: 5px; /*Relledo superior entre el borde superior y el contenido*/
+    padding-bottom: 40px; /*Relleno inferior entre el borde inferior y el contenido*/
+    margin-top: 30px; /*Tamaño del margen superior*/
+    text-align: center; /*Alineación del texto centrado*/
+    color: white; /*Color del texto*/
+}
+
+#footer .subheader{
+    color: white; /*Color del texto para el pie de página*/
+}
+
+#networks{ /*Elementos de redes sociales*/
+    display: block; /*Visualización de las imagenes (block, salto de línea antes y despues de cada elemento)*/
+    width: 216px; /*Anchura de los elementos*/
+    margin: 0px auto; /*Margen automático*/
+    list-style: none; /*Estilo de la lista (ninguno)*/
+    margin-bottom: 20px; /*Tamaño del margen inferior*/
+    margin-top: 20px; /*Tamaño del margen superior*/
+}
+
+#networks li{
+    float: left; /*Muestra elementos a la izquierda*/
+    margin-left: 20px; /*Tamaño del margen izquierdo*/
+    margin-right: 20px; /*Tamaño del margen derecho*/
+    transition: all 300ms; /*Duración de la transición de los elementos*/
+}
+
+#networks li:hover{
+    opacity: 0.8; /*Opacidad de los elementos*/
+    transform: scale(1.1, 1.1); /*Define una transformación que redisecciona un elemento en el plano 2D*/
+}
+
+    /* 1. Cabecera*/
+    @media(max-width: 1225px) { /*Media query que especifica cuando la anchura máxima sea 1225px*/
+        .container {
+            width: 95%; /*La anchura del contendor se reduce a 95%*/
+        }
+    }
+    
+    @media (max-width: 1085px) { /*Media query que aplica estilo especifico al encabezado
+        cuando la anchura sea de 1085px o menos*/
+        #main-header {
+            height: 70px; /*Cambiando la altura del encabezado a 70px*/
+            line-height: 65px; /*Con altura entre elementos de 65px*/
+        }
+    }
+    
+    @media(max-width: 999px) { /*Media query que aplica estilo cuando la anchura máxima
+        sea de 999px*/
+        #logo {
+            width: 227px; /*La anchura del logo cambiará a 227px*/
+            float: none; /*El elemento no flotará a la izq o derecha*/
+            margin: 0px auto; /*margen para el elemento que se usa horizontalmente */
+        }
+    
+        #menu { /*Selector que indica el ID del menu*/
+            float: none;
+            margin: 0px auto;
+        }
+    
+        /* 2. Estilo slider para marquesina*/
+    
+        #slider { /*Valores que se aplican al elemento cuando se aplica el media query*/
+            overflow: hidden; /*El elemento slider que refiere que cada elemento que salga
+            de los border se oculte*/
+            height: 150px; /*Se aplica una anchura de 150px*/
+        }
+    
+        #slider h2 { /*Elemento al cual se le aplica el media query*/
+            font-size: 30px; /*El tamaño de la fuente se cambia a 30px*/
+            line-height: 30px; /*Altura entre elementos de 30px*/
+            margin-top: 60px; /*Margen del elemento de 60px*/
+        }
+    }
+    
+        /* Media Queries para cambiar el texto de los servicios en un tamaño de 780px*/
+    @media (max-width: 700px) { /*Media query que especifica la anchura máxima sea de 700px o menos*/
+        .service, .video { /*Elementos a los que se le aplica el media query*/
+            width: 70%; /*La anchura del video se cambia a 70%*/
+            float: none; /*No flota por lo que no se mueve a izq o derecha*/
+            margin: 0px auto; /*margen automatico*/
+            margin-top: 20px; /*margen superior de 20px*/
+            margin-bottom: 40px; /*margen inferior a 40px*/
+            align-items: center;
+        }
+    
+        .service { /*El apartado de servicios al aplicarse el media query*/
+            width: 50%; /*La anchura cambia a 50%*/
+            text-align: justify; /*El texto se justufuca*/
+        }
+    
+        .service img { /*Las imagenes a las que se le aplica el media query*/
+            margin-bottom: 10px; /*Se aplica un margen de 10px*/
+            align-items: center;
+        }
+    
+        .service p, .video p { /*Elementos a los que se les aplica el media query*/
+            margin-top: 20px; /*Se aplica un margen superior de 20px*/
+        }
+    
+        .video iframe { 
+            width: 80%; /*Los video cambian su anchura a 80%*/
+            height: 230px; /*Y altura de 230px*/
+        }
+    }
+    
+        /* 3. Texto de la marquesina tamaño 460*/
+    @media (max-width: 460px) { /*Media query cuando la anchura maxima sea de 460px*/
+        #slider h2 {
+            font-size: 25px; /*El tamaño de fuente cambia a 25px*/
+            line-height: 30px; /*La distancia entre los elementos cambia a 30px*/
+            margin-top: 60px; /*Se aplica un margen superior de 60px*/
+        }
+    }
+    
+    @media (max-width: 377px) { /*Media query que se aplica cuando la anchura maxima sea de 377px*/
+        #menu {
+            width: 100%; /*El tamaño del menu no cambia*/
+            text-align: center; /*El texto se alinea al centro*/
+        }
+    
+        #menu ul li { /*Los vinculos del menu*/
+            margin-left: 4%; /*Se aplica margen izq y derecho de cada elemento a 4%*/
+            margin-right: 4%;
+        }
+    
+        /* 4. Texto de marquesina tamaño 377*/
+        #slider h2 {
+            margin-top: 50px; /*El titulo que se encuantra en el slider se le aplica
+            un margen superior de 50px*/
+        }
+    
+        .service, .video { /*Los videos y el apartado de servicios se cambia la anchura 
+            a 90%*/
+            width: 90%;
+        }
+    
+        .video iframe { /*El tamaño del iframe de video se cambia la anchura a 80%
+            y la altura a 150px*/
+            width: 80%;
+            height: 150px;
+        }
+    }
+    
+    @media (max-width: 345px) { /*Media query que aplica la anchura maxima a 345px o menos*/
+        #main-header {
+            height: auto; /*La altura del encabezado es automática*/
+        }
+    
+        #menu ul li { /*Los vinculos o lista del encabezado no flotan*/
+            float: none;
+        }
+    }

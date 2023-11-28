@@ -1,0 +1,112 @@
+@media(max-width: 1225px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1085px) {
+    #main-header {
+        height: 70px;
+        line-height: 65px;
+    }
+}
+
+@media(max-width: 999px) {
+    #logo {
+        width: 227px;
+        float: none;
+        margin: 0px auto;
+    }
+
+    #menu {
+        float: none;
+        margin: 0px auto;
+    }
+
+    /* 2. Estilo slider para marquesina*/
+
+    #slider {
+        overflow: hidden;
+        height: 150px;
+    }
+
+    #slider h2 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+}
+
+    /* Media Queries para cambiar el texto de los servicios en un tamaño de 780px*/
+@media (max-width: 700px) {
+    .service, .video {
+        width: 70%;
+        float: none;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .service {
+        width: 50%;
+        text-align: justify;
+    }
+
+    .service img {
+        margin-bottom: 10px;
+    }
+
+    .service p, .video p {
+        margin-top: 20px;
+    }
+
+    .video iframe {
+        width: 80%;
+        height: 230px;
+    }
+}
+
+    /* 3. Texto de la marquesina tamaño 460*/
+@media (max-width: 460px) {
+    #slider h2 {
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 377px) {
+    #menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu ul li {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    /* 4. Texto de marquesina tamaño 377*/
+    #slider h2 {
+        margin-top: 50px;
+    }
+
+    .service, .video {
+        width: 90%;
+    }
+
+    .video iframe {
+        width: 80%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 345px) {
+    #main-header {
+        height: auto;
+    }
+
+    #menu ul li {
+        float: none;
+    }
+}
